@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zarch Fragrance Studio | Custom Fragrance Design for Your Brand</title>
+<!-- Material Symbols & Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&amp;family=Quicksand:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#433f34",
+            "primary": "#efbe83",
+            "error": "#ffb4ab",
+            "surface-bright": "#3b3937",
+            "on-surface": "#e6e1df",
+            "secondary-fixed": "#ffdbc7",
+            "on-primary": "#462a00",
+            "on-secondary-container": "#ebaa81",
+            "background": "#141312",
+            "tertiary-fixed-dim": "#cdc6b7",
+            "primary-container": "#d1a36a",
+            "on-tertiary-fixed": "#1e1b12",
+            "secondary": "#fbb88e",
+            "on-error-container": "#ffdad6",
+            "error-container": "#93000a",
+            "surface-container-low": "#1d1b1a",
+            "surface-container-high": "#2b2a28",
+            "on-secondary-fixed": "#311300",
+            "outline": "#9c8f81",
+            "outline-variant": "#4f453a",
+            "on-primary-fixed": "#2a1700",
+            "secondary-container": "#6c3d1d",
+            "primary-fixed": "#ffddb7",
+            "tertiary": "#cdc6b7",
+            "on-primary-fixed-variant": "#614010",
+            "surface": "#141312",
+            "primary-fixed-dim": "#efbe82",
+            "on-secondary": "#4e2606",
+            "on-primary-container": "#593908",
+            "surface-tint": "#efbe82",
+            "tertiary-fixed": "#e9e2d2",
+            "inverse-primary": "#7c5726",
+            "on-surface-variant": "#d3c4b5",
+            "surface-container-highest": "#363433",
+            "secondary-fixed-dim": "#fbb88e",
+            "inverse-surface": "#e6e1df",
+            "on-background": "#e6e1df",
+            "on-secondary-fixed-variant": "#693b1b",
+            "on-error": "#690005",
+            "surface-container-lowest": "#0f0e0d",
+            "inverse-on-surface": "#32302f",
+            "tertiary-container": "#b1ab9d",
+            "on-tertiary-fixed-variant": "#4a463b",
+            "surface-container": "#211f1e",
+            "surface-dim": "#141312",
+            "surface-variant": "#363433",
+            "on-tertiary": "#343026"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3.5rem",
+            "gutter": "1.5rem",
+            "space-lg": "2rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.75rem",
+            "margin": "3.5rem",
+            "space-md": "1.25rem",
+            "space-xs": "0.375rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Poppins", "sans-serif"],
+            "headline-md": ["Poppins", "sans-serif"],
+            "body-md": ["Quicksand", "sans-serif"],
+            "label-sm": ["Quicksand", "sans-serif"],
+            "display-lg": ["Poppins", "sans-serif"],
+            "headline-sm": ["Poppins", "sans-serif"],
+            "label-md": ["Quicksand", "sans-serif"],
+            "body-lg": ["Quicksand", "sans-serif"],
+            "body-sm": ["Quicksand", "sans-serif"],
+            "headline-lg": ["Poppins", "sans-serif"],
+            "headline-lg-mobile": ["Poppins", "sans-serif"],
+            "label-lg": ["Quicksand", "sans-serif"],
+            "heading": ["Poppins", "sans-serif"],
+            "sans": ["Quicksand", "sans-serif"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "0.02em", "fontWeight": "200" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0.03em", "fontWeight": "200" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+            "label-sm": ["9px", { "lineHeight": "12px", "letterSpacing": "0.22em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "0.02em", "fontWeight": "200" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0.02em", "fontWeight": "300" }],
+            "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.18em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "300" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "0.04em", "fontWeight": "200" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.03em", "fontWeight": "200" }],
+            "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.14em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    ::selection {
+      background-color: #d1a36a;
+      color: #121110;
+    }
+    .chiaroscuro-gradient {
+      background: radial-gradient(circle at 60% 30%, rgba(209, 163, 106, 0.08) 0%, rgba(20, 19, 18, 0.95) 75%);
+    }
+    .stone-card-glow {
+      box-shadow: 0 24px 48px -12px rgba(6, 5, 4, 0.65);
+    }
+    header nav a {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    header nav a > span {
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      header nav a > span {
+        font-size: 9px;
+        line-height: 1.2;
+        letter-spacing: 0.06em;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary selection:text-surface-container-lowest font-light">
+<!-- TOP APP BAR -->
+<header class="bg-background/90 dark:bg-background/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 dark:border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-space-md lg:px-margin max-w-7xl mx-auto h-20">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-3 group" href="#">
+<img alt="Zarch Fragrance Studio Logo" class="relative -translate-x-0.5 h-11 md:h-12 w-auto object-contain group-hover:brightness-110 transition-all duration-300" src="zarch-studio-logo.png"/>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:grid flex-1 grid-cols-6 items-center gap-2 mx-6">
+<a aria-label="Services - บริการ" class="group grid min-w-0 place-items-center text-center text-tertiary-fixed-dim dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary font-label-md uppercase transition-colors duration-200" href="#services"><span class="col-start-1 row-start-1 tracking-[0.18em] transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Services</span><span class="col-start-1 row-start-1 normal-case tracking-normal opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">บริการ</span></a>
+<a aria-label="Portfolio - ผลงาน" class="group grid min-w-0 place-items-center text-center text-tertiary-fixed-dim dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary font-label-md uppercase transition-colors duration-200" href="#portfolio"><span class="col-start-1 row-start-1 tracking-[0.18em] transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Portfolio</span><span class="col-start-1 row-start-1 normal-case tracking-normal opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">ผลงาน</span></a>
+<a aria-label="Bespoke - สูตรเฉพาะ" class="group grid min-w-0 place-items-center text-center text-tertiary-fixed-dim dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary font-label-md uppercase transition-colors duration-200" href="#formulations"><span class="col-start-1 row-start-1 tracking-[0.18em] transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Bespoke</span><span class="col-start-1 row-start-1 normal-case tracking-normal opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">สูตรเฉพาะ</span></a>
+<a aria-label="Process - ขั้นตอนการทำงาน" class="group grid min-w-0 place-items-center text-center text-tertiary-fixed-dim dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary font-label-md uppercase transition-colors duration-200" href="#process"><span class="col-start-1 row-start-1 tracking-[0.18em] transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Process</span><span class="col-start-1 row-start-1 normal-case tracking-normal opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">ขั้นตอนการทำงาน</span></a>
+<a aria-label="Reviews - รีวิว" class="group grid min-w-0 place-items-center text-center text-tertiary-fixed-dim dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary font-label-md uppercase transition-colors duration-200" href="#reviews"><span class="col-start-1 row-start-1 tracking-[0.18em] transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Reviews</span><span class="col-start-1 row-start-1 normal-case tracking-normal opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">รีวิว</span></a>
+<a aria-label="Contact - ติดต่อ" class="group grid min-w-0 place-items-center text-center text-tertiary-fixed-dim dark:text-tertiary-fixed-dim hover:text-primary dark:hover:text-primary font-label-md uppercase transition-colors duration-200" href="#contact"><span class="col-start-1 row-start-1 tracking-[0.18em] transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Contact</span><span class="col-start-1 row-start-1 normal-case tracking-normal opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">ติดต่อ</span></a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a aria-label="Book Consultation - จองเวลาปรึกษา" class="relative group bg-primary hover:bg-[#E0B680] text-surface-container-lowest font-label-md text-label-md tracking-[0.18em] uppercase py-[0.875rem] px-[1.75rem] transition-all duration-300 shadow-sm font-semibold" href="#consultation">
+<span class="block transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Book Consultation</span>
+<span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">จองเวลาปรึกษา</span>
+        </a>
+</div>
+</div>
+</header>
+<!-- HERO SECTION -->
+<section class="relative min-h-[92vh] flex items-center pt-8 pb-16 overflow-hidden border-b border-outline-variant/20 chiaroscuro-gradient">
+<div class="max-w-7xl mx-auto px-space-md lg:px-margin w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Editorial Text (Col 1-6) -->
+<div class="lg:col-span-6 flex flex-col justify-center space-y-6 z-10">
+<div class="inline-flex items-center gap-3">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">Olfactory Architecture &amp; Alchemy</span>
+</div>
+<h1 class="font-headline-lg lg:font-display-lg text-headline-lg lg:text-display-lg text-on-surface uppercase tracking-wider font-extralight leading-none">
+            Custom<br/>Fragrance<br/><span class="text-primary italic font-light">Design</span><br/>For Your Brand
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed font-light">
+            Turn your vision into a unique scent experience. We create bespoke custom fragrances for fine perfume, skincare, luxury home fragrance, and iconic lifestyle brands.
+          </p>
+<!-- Key Formulation Accords Chips -->
+<div class="flex flex-wrap gap-2 pt-2 pb-2">
+<span class="px-3 py-1 bg-surface-container border border-outline-variant/30 text-tertiary font-label-sm text-label-sm tracking-[0.16em] uppercase">Natural Extracts</span>
+<span class="px-3 py-1 bg-surface-container border border-outline-variant/30 text-tertiary font-label-sm text-label-sm tracking-[0.16em] uppercase">Small Batch Pouring</span>
+<span class="px-3 py-1 bg-surface-container border border-outline-variant/30 text-tertiary font-label-sm text-label-sm tracking-[0.16em] uppercase">Private Label Flacons</span>
+</div>
+<!-- Dual CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+<a aria-label="Start Your Brief - เริ่มบรีฟงานของคุณ" class="relative group bg-primary hover:bg-[#E0B680] text-surface-container-lowest font-label-md text-label-md tracking-[0.18em] uppercase py-[0.875rem] px-[1.75rem] text-center transition-all duration-300 font-semibold" href="#consultation">
+<span class="block transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Start Your Brief</span>
+<span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">เริ่มบรีฟงานของคุณ</span>
+            </a>
+<a aria-label="Explore Bespoke Creations - ดูผลงานกลิ่นเฉพาะแบรนด์" class="relative group border border-outline-variant hover:border-primary text-on-surface hover:text-primary font-label-md text-label-md tracking-[0.18em] uppercase py-[0.875rem] px-[1.75rem] text-center transition-all duration-300 backdrop-blur-xs" href="#portfolio">
+<span class="block transition-opacity duration-1000 ease-in-out group-hover:opacity-0 group-focus-visible:opacity-0 motion-reduce:transition-none" aria-hidden="true">Explore Bespoke Creations</span>
+<span class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none" lang="th" aria-hidden="true">ดูผลงานกลิ่นเฉพาะแบรนด์</span>
+            </a>
+</div>
+<!-- Studio Credibility Bar -->
+<div class="pt-8 grid grid-cols-3 gap-6 border-t border-outline-variant/20 mt-4">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-light">140+</p>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Formulations Created</p>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-light">100%</p>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">IFRA Certified</p>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-light">02</p>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Refinement Rounds</p>
+</div>
+</div>
+</div>
+<!-- Hero Master Visual Frame (Col 7-12) -->
+<div class="lg:col-span-6 relative flex justify-center items-center">
+<!-- Ambient Plinth Aura -->
+<div class="absolute -inset-4 bg-primary/10 rounded-full blur-3xl opacity-40 pointer-events-none"></div>
+<!-- Main Visual Container matching inspiration image aesthetic -->
+<div class="relative w-full aspect-square border border-outline-variant/30 bg-surface-container-lowest overflow-hidden stone-card-glow group">
+<img alt="Bespoke luxury fragrance line on raw stone pedestal including scented candle, reed diffuser, and apothecary amber jars" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBJ-ZNGONFXVRo6xoJGMSDEYnPSgiTSpFW-uppAstks6q6J3OfIV487FR-mJaRceAW83lFxA2H5LtU8gqB1A2OUb1dDZ6ZTejQpVDmv2p6MdchS82ak_C7EPnXYuCg66_khrTs0rOnX1kVSQ2sK-eG2y-ux0nlIsXLLquo_fCAb7WLc6DKE17z_lBEoxtKIZzXUJJHK8gkmGU9AWIuNy2ojrb5KkChJvPYHS9uq_BYpDsoB57jUFhBBjlBj3X1ghubuw"/>
+<!-- Bottom Inset Tag -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-low/90 backdrop-blur-md border border-outline-variant/30 p-4 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary block">Signature Masterpiece</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-light">Amberwood &amp; Bergamot Accord</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest border-l border-outline-variant/40 pl-4">Custom Vessel No. 04</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FRAGRANCE DESIGN PROCESS -->
+<section class="py-space-xl bg-surface-container-lowest border-b border-outline-variant/20" id="process">
+<div class="max-w-7xl mx-auto px-space-md lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em] block mb-2">ร่วมงานกับ Zarch | Work with Zarch</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extralight"><span class="block">จากบรีฟสู่การสั่งผลิตซ้ำ</span><span class="block text-2xl mt-2">From Brief to Reorder</span></h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">
+          <span class="block mb-3">ขั้นตอนการทำงานร่วมกันอย่างชัดเจน เพื่อสร้างกลิ่นซิกเนเจอร์ให้แบรนด์ของคุณ ตั้งแต่การพูดคุยครั้งแรกจนถึงการผลิตและสั่งซ้ำ</span>
+          A clear, collaborative process for creating your signature fragrance, from the first conversation through production and future reorders.
+        </p>
+</div>
+<!-- Eight Stage Workflow -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">01</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">พูดคุยบรีฟและความต้องการ</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Creative Brief</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">พูดคุยเกี่ยวกับคอนเซปต์ผลิตภัณฑ์ กลุ่มเป้าหมาย ภาพลักษณ์แบรนด์ และแนวกลิ่นที่คุณต้องการ</span>
+              We discuss your product concept, target audience, brand identity, and the fragrance direction you are looking for.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">วิสัยทัศน์และกลุ่มเป้าหมาย</span><span class="block uppercase tracking-widest mt-1">Your vision &amp; audience</span></span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">02</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">นำเสนอคอนเซปต์กลิ่น</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Concept Presentation</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">สร้างและนำเสนอคอนเซปต์กลิ่น พร้อมแรงบันดาลใจ ทิศทางของกลิ่น และโครงสร้างกลิ่น</span>
+              We present fragrance concepts with their inspiration, olfactive direction, and fragrance structure.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">2-3 วันทำการ</span><span class="block uppercase tracking-widest mt-1">2-3 working days</span></span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">request_quote</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">03</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">ใบเสนอราคาและยืนยันงาน</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Quotation &amp; Confirmation</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">สรุปราคา ระยะเวลา จำนวนสั่งผลิตขั้นต่ำ และเงื่อนไขการทำงาน เริ่มงานหลังชำระค่าบริการงวดแรก</span>
+              We confirm the quotation, timeline, minimum order quantity, and terms. The project starts after the initial payment.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">ชำระ 50% เพื่อเริ่มงาน</span><span class="block uppercase tracking-widest mt-1">50% to begin</span></span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">science</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">04</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">พัฒนากลิ่นตัวอย่าง</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Fragrance Development</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">นักปรุงน้ำหอมพัฒนากลิ่นและจัดทำตัวอย่างรอบแรกให้คุณทดลอง</span>
+              Our perfumer develops your fragrance and prepares the first sample for you to evaluate.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">ตัวอย่างแรก: 7-14 วันทำการ</span><span class="block uppercase tracking-widest mt-1">First sample: 7-14 working days</span></span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface-container-low border border-primary/40 p-6 flex flex-col justify-between bg-surface-container-high/40 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">tune</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">05</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">ปรับแต่งกลิ่น</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Refinement</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">ปรับกลิ่นตามความคิดเห็นของคุณได้สูงสุด 2 รอบหลังจากการสร้างกลิ่นครั้งแรก รวมเป็น 3 รอบ</span>
+              We adjust the fragrance to your feedback for up to two rounds after the initial creation, for three rounds in total.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">รอบละ 5-7 วันทำการ</span><span class="block uppercase tracking-widest mt-1">5-7 working days per round</span></span>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">06</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">อนุมัติกลิ่นขั้นสุดท้าย</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Final Approval</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">เมื่อคุณอนุมัติตัวอย่างสุดท้าย เราจะยืนยันสูตร โดยชำระค่าบริการออกแบบส่วนที่เหลือ 50% ก่อนสั่งผลิต</span>
+              Once you approve the final sample, we confirm the formula. The remaining 50% design fee is due before the production order.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">ยืนยันสูตรเรียบร้อย</span><span class="block uppercase tracking-widest mt-1">Formula confirmed</span></span>
+</div>
+</div>
+<!-- Step 7 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">inventory_2</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">07</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">สั่งผลิต</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Production Order</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">สั่งผลิตขั้นต่ำ 1 กก. ต่อกลิ่น ราคาผลิตขึ้นอยู่กับวัตถุดิบและความซับซ้อนของกลิ่น</span>
+              Place a production order from 1 kg per fragrance. Production pricing depends on the ingredients and fragrance complexity.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">7-14 วันทำการหลังอนุมัติสูตร</span><span class="block uppercase tracking-widest mt-1">7-14 working days after approval</span></span>
+</div>
+</div>
+<!-- Step 8 -->
+<div class="bg-surface-container-low border border-outline-variant/25 p-6 flex flex-col justify-between hover:border-primary/50 transition-colors duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">autorenew</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">08</span>
+</div>
+<h3 class="font-heading text-on-surface mb-2 font-light text-sm"><span class="block">สั่งผลิตซ้ำในอนาคต</span><span class="block text-xs uppercase tracking-[0.12em] mt-1">Future Reorder</span></h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light">
+              <span class="block mb-3">สั่งผลิตซ้ำได้โดยไม่มีค่าออกแบบกลิ่นใหม่ หากไม่มีการเปลี่ยนแปลงสูตรที่อนุมัติไว้</span>
+              Reorder your fragrance without a new design fee, provided the approved formula remains unchanged.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">สูตรเดิม ไม่เสียค่าออกแบบใหม่</span><span class="block uppercase tracking-widest mt-1">Same formula, no redesign fee</span></span>
+</div>
+</div>
+</div>
+<!-- Project Details & Terms -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+<div class="border border-outline-variant/25 bg-surface-container-low p-6">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">ค่าออกแบบและการชำระเงิน</span><span class="block uppercase tracking-widest mt-1">Design Fee &amp; Payment</span></span>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light mt-3">
+              <span class="block mb-3">ค่าออกแบบ 3,000 บาทต่อกลิ่น โดยราคาสุดท้ายขึ้นอยู่กับความซับซ้อนและวัตถุดิบ ครอบคลุมเฉพาะการออกแบบกลิ่นและพัฒนาสูตร ไม่รวมค่าผลิต ชำระ 50% เพื่อเริ่มงาน (ไม่คืนเงินเมื่อยกเลิกหลังเริ่มงาน) และอีก 50% หลังอนุมัติ ก่อนสั่งผลิต</span>
+              THB 3,000 per scent; the final fee depends on fragrance complexity and materials. The fee covers design and formula development only, not production. Pay 50% to start (non-refundable after cancellation) and 50% after approval, before production.
+            </p>
+</div>
+<div class="border border-outline-variant/25 bg-surface-container-low p-6">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">รอบแก้ไขและระยะเวลา</span><span class="block uppercase tracking-widest mt-1">Revisions &amp; Timing</span></span>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light mt-3">
+              <span class="block mb-3">รวมการปรับแต่ง 2 รอบหลังตัวอย่างแรก รอบเพิ่มเติมคิด 800 บาทต่อรอบ ระยะเวลา: คอนเซปต์ 2-3 วันทำการ ตัวอย่างแรก 7-14 วันทำการ และการปรับแต่งรอบละ 5-7 วันทำการ</span>
+              Up to two refinement rounds are included after the initial sample; each additional round is THB 800. Concept: 2-3 working days; first sample: 7-14 working days; each refinement: 5-7 working days.
+            </p>
+</div>
+<div class="border border-outline-variant/25 bg-surface-container-low p-6">
+<span class="font-label-sm text-label-sm text-primary"><span class="block">กรรมสิทธิ์สูตรและเงื่อนไขอื่น</span><span class="block uppercase tracking-widest mt-1">Formula &amp; Other Terms</span></span>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed font-light mt-3">
+              <span class="block mb-3">สูตรเป็นทรัพย์สินทางปัญญาของ Zarch Studio ลูกค้าได้รับสิทธิ์ใช้งานตามที่ตกลง เว้นแต่จะตกลงเรื่องกรรมสิทธิ์เป็นลายลักษณ์อักษร ราคายังไม่รวม VAT 7% และค่าจัดส่ง</span>
+              Zarch Studio owns the formula; clients receive the agreed right to use the fragrance unless ownership is agreed in writing. Prices exclude 7% VAT and shipping.
+            </p>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-outline leading-relaxed mt-4">
+          <span class="block mb-2">สั่งผลิตขั้นต่ำ 1 กก. ต่อกลิ่น รอบปรับแต่งเพิ่มเติมคิด 800 บาทต่อรอบ และเงินเริ่มงานไม่สามารถคืนได้หากยกเลิกโครงการ</span>
+          A 1 kg minimum order applies per fragrance. Additional refinement rounds are charged at THB 800 each. Payments made to start a project are non-refundable if the project is cancelled.
+</p>
+<!-- Linear Sub-Banner -->
+<div class="mt-12 flex flex-col sm:flex-row items-center justify-between p-6 border border-outline-variant/30 bg-surface-container">
+<div class="flex items-center gap-4 mb-4 sm:mb-0">
+<img alt="Zarch White Logo" class="h-8 w-auto object-contain" src="zarch-studio-logo.png"/>
+<span class="font-heading text-on-surface uppercase tracking-[0.25em] text-xs font-light">YOUR VISION. OUR EXPERTISE.</span>
+</div>
+<a class="font-label-sm text-label-sm tracking-[0.2em] text-primary hover:text-white uppercase inline-flex items-center gap-2 group" href="#consultation">
+          Book Your Briefing Window <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- PRODUCT CATEGORIES SHOWCASE ("Bespoke Product Formulations") -->
+<section class="py-space-xl bg-background border-b border-outline-variant/20" id="formulations">
+<div class="max-w-7xl mx-auto px-space-md lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em] block mb-3">Portfolio of Disciplines</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extralight tracking-wide uppercase">Bespoke Product Formulations</h2>
+<div class="w-12 h-[1px] bg-primary mx-auto my-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+          From sculptural amber reed diffusers to hand-poured soy wax and concentrated extrait de parfum, each formulation is tailored to your brand’s tactile narrative.
+        </p>
+</div>
+<!-- Bento Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Category 1: Reed Diffusers -->
+<div class="bg-surface-container-low border border-outline-variant/25 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist amber apothecary glass reed diffuser with dark natural willow reeds resting upon a textured slate plinth in a dark luxury perfume studio. The dramatic chiaroscuro side lighting creates deep shadows and rich honey-toned glass reflections. The setting is grounded in charcoal and matte black tones with subtle warm highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3ifd8uLeMizzsfahthQ3i2-5dH7yy0hEP-QZPMqtSx1F9zIokPYLzHtH8dbvTAFZ47jRysm-4G4MVGoFzOio4SEQrb8W4iwlALk79ofuo4E7KTwCygj4xVp4zk581v2CPfg11z6J4AGOd3-fhm2U82gnBpB-TO8LwYdQzc3XqS-Cxeg4hCSHTRPMayYa9r9-74TElarVRdtp1fHn3JYggKpULmjc5JF_JuR-ckAUFAhXpCzuKIZJD"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-2.5 py-1 border border-outline-variant/30 text-primary font-label-sm text-label-sm tracking-wider uppercase">01 / Diffusers</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-light">Luxury Amber Reed Diffusers</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mb-4 font-light">
+              Heavy faceted apothecary flacons with custom milled natural rattan reeds. Engineered with slow-evaporation carrier bases for constant 90-day diffusion.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-outline-variant/15">
+<span class="text-outline font-label-sm text-label-sm uppercase">100ml / 250ml / 500ml</span>
+<span class="text-primary font-label-sm text-label-sm">•</span>
+<span class="text-outline font-label-sm text-label-sm uppercase">Custom Amber Glass</span>
+</div>
+</div>
+</div>
+<!-- Category 2: Soy Wax Candles -->
+<div class="bg-surface-container-low border border-outline-variant/25 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist artisanal hand-poured scented soy candle glowing softly inside a matte ceramic vessel sitting on a raw cut basalt stone slab. Warm golden flame flickers softly casting organic shadows on dark textured concrete backdrop. The overall mood is contemplative, tranquil, and luxurious with botanical ingredients scattered nearby." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgD4c9PXtFcudX6nahL8BR048DTgsb1TjG1tcnwf-i-2z9yAQE_avi8e1a5EwRhNfEzVLIV9x3yiUc2ZT-M9k_vwemdWKEdWQCeZ67pC0AtJbaW94pHSr04Rh--gyL8D-sJMyg85Q83AyClsLAcPUnO1Ak5SMyV-gZTTm0nUgE0Qy2OePodFSFd7d_3I-jE5QrpfgoYodyycSZ_OS-Oq30ggpWX3KYE5PARxf6X1QmJlH1ZZEp6Yic"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-2.5 py-1 border border-outline-variant/30 text-primary font-label-sm text-label-sm tracking-wider uppercase">02 / Candles</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-light">Scented Soy &amp; Mineral Candles</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mb-4 font-light">
+              Hand-poured 100% natural botanical wax blends paired with unbleached cotton or crackling wooden wicks. Designed for maximum scent throw and zero soot burn.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-outline-variant/15">
+<span class="text-outline font-label-sm text-label-sm uppercase">Ceramic / Frosted Vessels</span>
+<span class="text-primary font-label-sm text-label-sm">•</span>
+<span class="text-outline font-label-sm text-label-sm uppercase">55-80 Hr Burn</span>
+</div>
+</div>
+</div>
+<!-- Category 3: Skincare & Body Care -->
+<div class="bg-surface-container-low border border-outline-variant/25 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="An elegant pump lotion dispenser bottle and a sleek dark cosmetic balm jar placed on a moist volcanic stone surface with bergamot peel and white jasmine petals nearby. Minimalist high-end cosmetic styling under warm subdued spotlights. Deep chiaroscuro shadows highlighting matte ivory and deep bronze packaging tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZTklKRGvZgyFKleFKSzhoU_NYHVoFT04Nj5eKZ2BnYeqQK3ifiD-LNc7yB7o0fRQghJqWh7CBeIYJNXxQbPmfd_irgxuc4TpOpmgXONfcb5_U7RaS2bgO9n1lFXnghjv5yVF5Rfa_1DMo4VhVbhcdGzZymOvlXcTlsqFIW4aqeb4OQNF0ikyisfe3rGaz7ZkSE2-40UFYkZNXQIJINYuauO2F38-gYjAyjeZRDTx2lIUdJpbyLJnH"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-2.5 py-1 border border-outline-variant/30 text-primary font-label-sm text-label-sm tracking-wider uppercase">03 / Body Care</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-light">Skincare &amp; Body Care Aromatics</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mb-4 font-light">
+              Nourishing organic hand balms, botanical body washes, and hydrating oils infused with dermatologically stable scent concentrations.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-outline-variant/15">
+<span class="text-outline font-label-sm text-label-sm uppercase">Clean Ingredients</span>
+<span class="text-primary font-label-sm text-label-sm">•</span>
+<span class="text-outline font-label-sm text-label-sm uppercase">Silk Touch Finish</span>
+</div>
+</div>
+</div>
+<!-- Category 4: Fine Fragrance Haute Parfumerie -->
+<div class="bg-surface-container-low border border-outline-variant/25 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="A heavy crystal perfume flacon with a magnetic metal cap resting on an architectural dark plinth in an art gallery exhibition setting. Golden amber liquid reflects fine studio light beams cutting through subtle atmospheric mist. High fashion editorial composition focused on luxury bespoke craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUFcpsMQYFy_LZkbrlPd8Sv_EwgTvxS2MaCdFVVV5_zwbSd21rJZ_rS96a0EB2K6QRzoNqR8DktAPyCMjwJHyXBS_9i-rNbnHfUkgXr23fFJvv1dIiXkLmfMKQpLa813qIofTqXwNhN9fTzyd59CpuwKI0veZDhTEx2PLiiL0J11dM5aTEUkKv3uIOTmZUhzK5p1d7RX3stVxYl-akIvZN3iwuzadcJD0-iU9SjQgFdPOOOsgzi0Il"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-2.5 py-1 border border-outline-variant/30 text-primary font-label-sm text-label-sm tracking-wider uppercase">04 / Haute Parfumerie</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-light">Fine Fragrance &amp; Extrait</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mb-4 font-light">
+              High-concentration Eau de Parfum (18-22%) and Extrait de Parfum (30%+) crafted with rare naturals, French orris, aged oud, and sustainable synthetics.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-outline-variant/15">
+<span class="text-outline font-label-sm text-label-sm uppercase">French Glass Flacons</span>
+<span class="text-primary font-label-sm text-label-sm">•</span>
+<span class="text-outline font-label-sm text-label-sm uppercase">4-Week Maceration</span>
+</div>
+</div>
+</div>
+<!-- Category 5: Room & Linen Mists -->
+<div class="bg-surface-container-low border border-outline-variant/25 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-64 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="A matte black fine-mist room spray bottle standing beside folded raw natural linen textiles on a dark oak table. Soft warm morning backlight reveals a delicate vapor aura. The environment is serene, sophisticated, and minimalist, emphasizing clean botanical interior fragrances." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXkk0DfrnvS-lVzsfFGi6Z1uFTv7D7qS5VP_lE5j4-zxtM5qaXHsZYq1LVHoY46zbbckpGTPShWaeC-hx8OY7fftSHUe_8ouwFuWjPBEhKDW15QSzsCYh4nJN3tScHqVYzb0Bc4q0xxdZZZgPApwtDuzE6JgjjYblaAAkyl7CVNE8M_P6UpVXT6RiQku8GUe1rJhhXRzkWr4aLHCd_AJC0eA6V9YDBWCvFeap9R0OwavRAM2krYuBs"/>
+<div class="absolute top-4 left-4 bg-background/80 backdrop-blur-sm px-2.5 py-1 border border-outline-variant/30 text-primary font-label-sm text-label-sm tracking-wider uppercase">05 / Room &amp; Linen</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-light">Atmospheric Room &amp; Linen Mists</h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mb-4 font-light">
+              Ultra-fine aerosolized triggers that instantly transform interior ambience and textile fibers without staining fine silks or porous linens.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-outline-variant/15">
+<span class="text-outline font-label-sm text-label-sm uppercase">Micro-Mist Atomizer</span>
+<span class="text-primary font-label-sm text-label-sm">•</span>
+<span class="text-outline font-label-sm text-label-sm uppercase">Non-Staining</span>
+</div>
+</div>
+</div>
+<!-- Category 6: Bespoke Amenities & Hospitality -->
+<div class="bg-surface-container border border-primary/30 p-8 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em] block mb-2">Hospitality &amp; Corporate</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4 font-extralight">Turnkey Brand Collections</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 font-light">
+              From signature hotel lobby scent diffusion programs to bespoke branded gift sets for luxury real estate and fashion week activations.
+            </p>
+<ul class="space-y-3 font-body-sm text-body-sm text-tertiary font-light">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check</span> End-to-end custom bottle prototyping</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check</span> Private label box packaging &amp; foil stamping</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check</span> Global logistical fulfillment</li>
+</ul>
+</div>
+<div class="pt-8 mt-6 border-t border-outline-variant/20">
+<a class="font-heading text-xs text-primary tracking-[0.2em] uppercase inline-flex items-center gap-2 hover:underline font-light" href="#consultation">
+              Request Studio Catalog <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CLIENT COLLABORATIONS & CASE STUDIES -->
+<section class="py-space-xl bg-surface-container-lowest border-b border-outline-variant/20" id="portfolio">
+<div class="max-w-7xl mx-auto px-space-md lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em] block mb-2">Commissioned Case Studies</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extralight">Featured Brand Collaborations</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm font-light">
+          Discover how prestigious boutique hotels and designer labels established identity through tailored olfactory formulas.
+        </p>
+</div>
+<!-- Case Studies Gallery Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- Case Study 1 -->
+<div class="bg-surface-container border border-outline-variant/25 p-8 flex flex-col justify-between hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block">Boutique Hospitality</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 font-extralight">Maison Lumière Hotel &amp; Spa</h3>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-tertiary uppercase tracking-widest border border-outline-variant/30">Paris / Zurich</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-6">
+              An ambient olfactory identity designed to greet international patrons upon entering the grand atrium marble lobby, mirrored across bespoke guestroom bath amenities and turndown candles.
+            </p>
+<!-- Scent Notes Breakdown Box -->
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/20 mb-6">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-2">Olfactory Accord Profile</span>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">TOP</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Calabrian Bergamot</span>
+</div>
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">HEART</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">White Tea &amp; Iris</span>
+</div>
+<div class="p-2">
+<span class="font-label-sm text-label-sm text-primary block">BASE</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Golden Amber &amp; Cedar</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-body-sm text-body-sm text-tertiary font-light">Deliverables: HVAC Scenting, 300ml Wash, Soy Candles</span>
+<span class="material-symbols-outlined text-primary">arrow_outward</span>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="bg-surface-container border border-outline-variant/25 p-8 flex flex-col justify-between hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block">Organic Skincare</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 font-extralight">Vespera Botanicals</h3>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-tertiary uppercase tracking-widest border border-outline-variant/30">Stockholm</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-6">
+              A serene, non-irritating botanical fragrance formulated for an award-winning peptide face serum line, combining calming medicinal herbs with delicate floral extracts.
+            </p>
+<!-- Scent Notes Breakdown Box -->
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/20 mb-6">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-2">Olfactory Accord Profile</span>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">TOP</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Wild Chamomile</span>
+</div>
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">HEART</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Damascena Rose</span>
+</div>
+<div class="p-2">
+<span class="font-label-sm text-label-sm text-primary block">BASE</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Vetiver Grass</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-body-sm text-body-sm text-tertiary font-light">Deliverables: 100% Allergen-free Serum Scent</span>
+<span class="material-symbols-outlined text-primary">arrow_outward</span>
+</div>
+</div>
+<!-- Case Study 3 -->
+<div class="bg-surface-container border border-outline-variant/25 p-8 flex flex-col justify-between hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block">Interior Architecture</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 font-extralight">Aethelgard Home Objects</h3>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-tertiary uppercase tracking-widest border border-outline-variant/30">Copenhagen</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-6">
+              Limited run of 1,500 mouth-blown smoked glass reed diffusers paired with architectural Nordic accords that evoke charred oak, crisp hearths, and Scandinavian autumn mist.
+            </p>
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/20 mb-6">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-2">Olfactory Accord Profile</span>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">TOP</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Juniper Needle</span>
+</div>
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">HEART</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Birch Tar &amp; Clove</span>
+</div>
+<div class="p-2">
+<span class="font-label-sm text-label-sm text-primary block">BASE</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Smoked Leather</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-body-sm text-body-sm text-tertiary font-light">Deliverables: Custom 500ml Diffuser &amp; Gift Packaging</span>
+<span class="material-symbols-outlined text-primary">arrow_outward</span>
+</div>
+</div>
+<!-- Case Study 4 -->
+<div class="bg-surface-container border border-outline-variant/25 p-8 flex flex-col justify-between hover:border-primary/40 transition-all duration-300">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block">Wellness Sanctuary</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 font-extralight">Sora Retreat &amp; Hot Springs</h3>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-tertiary uppercase tracking-widest border border-outline-variant/30">Kyoto</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-6">
+              A ceremonial scent formulation developed for onsen suites and meditative meditation chambers, centered on traditional Japanese hinoki cypress, steamed green tea, and wet moss.
+            </p>
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/20 mb-6">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-2">Olfactory Accord Profile</span>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">TOP</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Yuzu Zest</span>
+</div>
+<div class="p-2 border-r border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-primary block">HEART</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Hinoki Wood</span>
+</div>
+<div class="p-2">
+<span class="font-label-sm text-label-sm text-primary block">BASE</span>
+<span class="font-body-sm text-body-sm text-on-surface font-light">Frankincense &amp; Moss</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-body-sm text-body-sm text-tertiary font-light">Deliverables: Custom Incense, Bath Soak, Room Mist</span>
+<span class="material-symbols-outlined text-primary">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CLIENT REVIEWS & ENDORSEMENTS ("Voices of Trust") -->
+<section class="py-space-xl bg-background border-b border-outline-variant/20" id="reviews">
+<div class="max-w-7xl mx-auto px-space-md lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em] block mb-2">Verified Collaborations</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extralight">Endorsements &amp; Testimonials</h2>
+<div class="w-12 h-[1px] bg-primary mx-auto my-4"></div>
+</div>
+<!-- Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface-container-low border border-outline-variant/30 p-8 flex flex-col justify-between relative">
+<div>
+<div class="flex text-primary mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic font-light mb-6">
+              "Zarch Fragrance Studio translated the nuanced mood of our alpine hotel into an intoxicating scent that our guests now demand to buy upon checkout. The reed diffuser formulation has unprecedented longevity."
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<p class="font-heading text-sm text-on-surface uppercase tracking-wider font-normal">Elena von Berg</p>
+<p class="font-body-sm text-body-sm text-outline font-light">Founder &amp; Creative Director, Maison Lumière</p>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low border border-primary/30 p-8 flex flex-col justify-between relative">
+<div>
+<div class="flex text-primary mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic font-light mb-6">
+              "Their 5-step methodology is remarkably rigorous. Getting scent formulation right for a delicate facial product was intimidating, but their lab refined the scent twice to perfection without destabilizing our actives."
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<p class="font-heading text-sm text-on-surface uppercase tracking-wider font-normal">Marcus Linqvist</p>
+<p class="font-body-sm text-body-sm text-outline font-light">Head of Product, Vespera Botanicals</p>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low border border-outline-variant/30 p-8 flex flex-col justify-between relative">
+<div>
+<div class="flex text-primary mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic font-light mb-6">
+              "The bespoke amber bottles, natural wicks, and hot throw of our collaborative candle exceeded expectations. Working with the team at Zarch felt like collaborating with master sculptors of invisible art."
+            </p>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<p class="font-heading text-sm text-on-surface uppercase tracking-wider font-normal">Astrid Holm</p>
+<p class="font-body-sm text-body-sm text-outline font-light">Curator, Aethelgard Design</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRIVATE CONSULTATION & BRIEF INTAKE SECTION -->
+<section class="py-space-xl bg-surface-container-lowest border-b border-outline-variant/20" id="consultation">
+<div class="max-w-7xl mx-auto px-space-md lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Editorial Callout -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center gap-3">
+<img alt="Zarch White Logo" class="h-6 w-auto object-contain" src="zarch-studio-logo.png"/>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.25em]">Direct Studio Inquiries</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-wider font-extralight">
+            Your Vision.<br/><span class="text-primary italic font-light">Our Expertise.</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+            Begin the development of your brand's bespoke olfactory signature. We accept a limited number of studio commissions per quarter to ensure artisanal attention and precision maceration.
+          </p>
+<div class="pt-6 space-y-4 border-t border-outline-variant/20">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<div>
+<p class="font-heading text-xs text-on-surface uppercase tracking-wider font-light">Studio &amp; Lab</p>
+<p class="font-body-sm text-body-sm text-outline font-light">Rue du Faubourg Saint-Honoré, Atelier 14, Paris</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">schedule</span>
+<div>
+<p class="font-heading text-xs text-on-surface uppercase tracking-wider font-light">Studio Response Time</p>
+<p class="font-body-sm text-body-sm text-outline font-light">Within 24 business hours</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Flacon-Style Intake Form -->
+<div class="lg:col-span-7 bg-surface-container border border-outline-variant/30 p-8 lg:p-10 stone-card-glow">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Your studio consultation request has been submitted to Zarch Fragrance Studio.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Name -->
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-[0.22em] block mb-2">Principal Name</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary text-on-surface font-body-md text-body-md px-4 py-3 outline-none transition-colors duration-200 font-light" placeholder="e.g. Charlotte Dubois" required="" type="text"/>
+</div>
+<!-- Brand Name -->
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-[0.22em] block mb-2">Brand or Organization</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary text-on-surface font-body-md text-body-md px-4 py-3 outline-none transition-colors duration-200 font-light" placeholder="e.g. Maison Lumire" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Work Email -->
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-[0.22em] block mb-2">Direct Email Address</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary text-on-surface font-body-md text-body-md px-4 py-3 outline-none transition-colors duration-200 font-light" placeholder="principal@brand.com" required="" type="email"/>
+</div>
+<!-- Estimated Units Volume -->
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-[0.22em] block mb-2">Projected Volume (Units)</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary text-on-surface font-body-md text-body-md px-4 py-3 outline-none transition-colors duration-200 font-light">
+<option value="500-1000">500 – 1,000 units (Small Batch)</option>
+<option value="1000-5000">1,000 – 5,000 units (Commercial Run)</option>
+<option value="5000+">5,000+ units (Full Distribution)</option>
+<option value="hospitality">Custom Ambient Scenting (Hotel / Retail)</option>
+</select>
+</div>
+</div>
+<!-- Product Category Checkbox Selectors -->
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-[0.22em] block mb-3">Product Mediums of Interest (Select All Applicable)</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<label class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm p-3 border border-outline-variant/20 bg-surface-container-low cursor-pointer hover:border-primary/50 transition-colors font-light">
+<input checked="" class="w-4 h-4 rounded-none bg-surface-container border-primary text-primary focus:ring-0" type="checkbox"/>
+<span>Candles</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm p-3 border border-outline-variant/20 bg-surface-container-low cursor-pointer hover:border-primary/50 transition-colors font-light">
+<input checked="" class="w-4 h-4 rounded-none bg-surface-container border-primary text-primary focus:ring-0" type="checkbox"/>
+<span>Diffusers</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm p-3 border border-outline-variant/20 bg-surface-container-low cursor-pointer hover:border-primary/50 transition-colors font-light">
+<input class="w-4 h-4 rounded-none bg-surface-container border-primary text-primary focus:ring-0" type="checkbox"/>
+<span>Fine Perfume</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm p-3 border border-outline-variant/20 bg-surface-container-low cursor-pointer hover:border-primary/50 transition-colors font-light">
+<input class="w-4 h-4 rounded-none bg-surface-container border-primary text-primary focus:ring-0" type="checkbox"/>
+<span>Skincare</span>
+</label>
+</div>
+</div>
+<!-- Notes & Brief Overview -->
+<div>
+<label class="font-label-sm text-label-sm text-primary uppercase tracking-[0.22em] block mb-2">Olfactory Vision &amp; Timeline Expectations</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary text-on-surface font-body-md text-body-md p-4 outline-none transition-colors duration-200 font-light" placeholder="Describe the brand mood, emotional associations, desired accords (e.g. cedar, amber, bergamot), and launch targets..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-[#E0B680] text-surface-container-lowest font-heading tracking-[0.2em] uppercase py-4 transition-all duration-300 font-medium text-sm shadow-md" type="submit">
+              Submit Studio Brief for Review
+            </button>
+<p class="font-label-sm text-label-sm text-center text-outline uppercase tracking-wider font-light">All formulation inquiries are bound by a strict studio non-disclosure agreement.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width border-t border-outline-variant/20 dark:border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-space-md lg:px-margin max-w-7xl mx-auto py-space-lg gap-space-md">
+<!-- Brand & Copyright -->
+<div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+<img alt="Zarch Fragrance Studio Logo" class="h-11 md:h-12 w-auto shrink-0 object-contain" src="zarch-studio-logo.png"/>
+<div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5 font-light">© 2024 Zarch Fragrance Studio. All rights reserved. Bespoke Olfactory Architecture.</p>
+</div>
+</div>
+<!-- Footer Navigation Links -->
+<div class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-outline dark:text-outline hover:text-primary dark:hover:text-primary font-label-sm uppercase tracking-[0.22em] transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-outline dark:text-outline hover:text-primary dark:hover:text-primary font-label-sm uppercase tracking-[0.22em] transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-outline dark:text-outline hover:text-primary dark:hover:text-primary font-label-sm uppercase tracking-[0.22em] transition-colors duration-200" href="#consultation">Studio Inquiries</a>
+<a class="text-primary dark:text-primary font-label-sm uppercase tracking-[0.22em]" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>
