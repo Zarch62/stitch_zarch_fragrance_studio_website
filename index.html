@@ -129,8 +129,29 @@
     .service-card { display: flex; min-height: 100%; flex-direction: column; padding: clamp(1.5rem, 4vw, 2.5rem); border: 1px solid var(--line); background: var(--panel); }
     .service-card p { margin-bottom: 1.25rem; }
     .service-card ul { display: grid; gap: .7rem; margin: 0 0 2rem; padding-left: 1.2rem; color: var(--muted); line-height: 1.65; }
+    .service-card .service-tagline { margin: -.45rem 0 1rem; color: var(--paper); font-family: var(--headline); font-weight: 500; }
+    .service-card .service-detail-title { margin: .6rem 0 .7rem; color: var(--paper); font-size: 1rem; font-weight: 500; }
+    .service-card .thai { font-size: .95em; line-height: 1.8; }
+    .service-card li .thai { margin-top: .35rem; }
+    .service-card .language-toggle .thai { font-size: 1.1em; }
+    .service-card .note { margin-top: 1.25rem; }
+    .service-more { margin: .75rem 0 1.5rem; border-top: 1px solid var(--line); }
+    .service-more summary { display: flex; min-height: 48px; align-items: center; justify-content: space-between; gap: 1rem; color: var(--accent); cursor: pointer; font-size: .78rem; font-weight: 600; letter-spacing: .12em; list-style: none; text-transform: uppercase; }
+    .service-more summary::-webkit-details-marker { display: none; }
+    .service-more summary::after { content: "+"; font-size: 1.2rem; }
+    .service-more[open] summary::after { content: "−"; }
+    .service-more summary .less,
+    .service-more summary .thai .less,
+    .service-more[open] summary .more,
+    .service-more[open] summary .thai .more { display: none; }
+    .service-more[open] summary .less,
+    .service-more[open] summary .thai .less { display: inline; }
+    .service-more summary .thai { margin: 0 0 0 auto; font-size: 1em; font-weight: 400; letter-spacing: 0; text-transform: none; }
+    .service-more > :not(summary) { animation: service-reveal .35s ease-out; }
+    @keyframes service-reveal { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
     .service-card li::marker { color: var(--accent); }
     .price { margin: .3rem 0 .4rem; color: var(--paper); font-family: var(--headline); font-size: 2rem; font-weight: 200; }
+    .price .thai { font-family: var(--sans); font-size: .5em; font-weight: 400; }
     .price small { color: var(--muted); font-family: var(--sans); font-size: .85rem; }
     .service-card .button { align-self: flex-start; margin-top: auto; }
     .note { padding: 1rem 1.1rem; border-left: 2px solid var(--accent); background: var(--panel-light); color: var(--muted); font-size: .9rem; line-height: 1.7; }
@@ -197,7 +218,7 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="button header-cta" href="#contact">Start a conversation</a>
+      <a class="button language-toggle header-cta" href="#contact" aria-label="Start a conversation"><span class="button-label">Start a conversation</span><span class="thai" lang="th" aria-hidden="true">เริ่มพูดคุย</span></a>
     </div>
   </header>
 
@@ -230,30 +251,46 @@
         </div>
         <div class="service-grid">
           <article class="service-card" id="custom-design">
-            <p class="eyebrow">01 / Custom fragrance design</p>
-            <h3>A scent developed around your brief<span class="thai" lang="th">ออกแบบกลิ่นตามบรีฟและทิศทางของแบรนด์</span></h3>
-            <p>For independent brands and small businesses looking to develop a distinctive fragrance identity. The work begins with your brief and moves through creative direction, fragrance development, evaluation, and refinement.<span class="thai" lang="th">สำหรับแบรนด์อิสระและธุรกิจขนาดเล็กที่ต้องการพัฒนาเอกลักษณ์ด้านกลิ่น เริ่มจากบรีฟของคุณ ต่อด้วยการกำหนดทิศทางสร้างสรรค์ การพัฒนากลิ่น การประเมิน และการปรับแต่ง</span></p>
-            <ul>
-              <li>Share your product, audience, and brand direction<span class="thai" lang="th">เล่าถึงผลิตภัณฑ์ กลุ่มเป้าหมาย และทิศทางของแบรนด์</span></li>
-              <li>Discuss the development scope and agreed deliverables<span class="thai" lang="th">หารือขอบเขตการพัฒนาและสิ่งที่จะส่งมอบ</span></li>
-              <li>Evaluate the fragrance and discuss refinements<span class="thai" lang="th">ประเมินกลิ่นและหารือการปรับแต่ง</span></li>
-            </ul>
-            <p class="price">THB 3,000 <small>per scent / ต่อกลิ่น</small></p>
-            <p class="note">Current stated design price. Confirm whether this is a fixed or starting fee, and what it includes, before commissioning. Samples, revisions, and other terms are not specified here.<span class="thai" lang="th">ราคาค่าออกแบบที่ระบุในปัจจุบัน โปรดยืนยันว่าเป็นราคาคงที่หรือราคาเริ่มต้น และครอบคลุมอะไรบ้างก่อนเริ่มงาน รายละเอียดตัวอย่าง การปรับแต่ง และเงื่อนไขอื่นยังไม่ได้ระบุไว้</span></p>
-            <a class="button language-toggle" href="mailto:zarch.pf@gmail.com?subject=Custom%20fragrance%20design%20inquiry" aria-label="Enquire about a scent"><span class="button-label">Enquire about a scent</span><span class="thai" lang="th" aria-hidden="true">สอบถามบริการออกแบบกลิ่น</span></a>
+            <p class="eyebrow">01 / Custom Fragrance Design</p>
+            <h3>Custom Fragrance Design<span class="thai" lang="th">บริการออกแบบกลิ่นเฉพาะแบรนด์</span></h3>
+            <p class="service-tagline">Your Idea. Your Identity. Your Scent.</p>
+            <p>We develop distinctive fragrance concepts tailored to your brand, product, and creative direction, combining fragrance expertise with a technical understanding of product development.<span class="thai" lang="th">Zarch Fragrance Studio ให้บริการออกแบบและพัฒนากลิ่นตามแนวคิดของแบรนด์ ผลิตภัณฑ์ และทิศทางที่ลูกค้าต้องการ โดยผสานความเชี่ยวชาญด้านน้ำหอมเข้ากับความรู้ทางเทคนิคในการพัฒนาผลิตภัณฑ์</span></p>
+            <p class="price">THB 3,000 <small>per scent</small><span class="thai" lang="th">ค่าบริการ 3,000 บาทต่อกลิ่น</span></p>
+            <p>The fee covers fragrance development based on the agreed brief and up to two rounds of fragrance refinement.<span class="thai" lang="th">ค่าบริการครอบคลุมการพัฒนากลิ่นตามบรีฟที่ตกลงร่วมกัน และการปรับแต่งกลิ่นได้ไม่เกิน 2 รอบ</span></p>
+            <details class="service-more">
+              <summary><span><span class="more">More</span><span class="less">Less</span></span><span class="thai" lang="th"><span class="more">เพิ่มเติม</span><span class="less">ย่อ</span></span></summary>
+              <h4 class="service-detail-title">What to Expect<span class="thai" lang="th">รายละเอียดบริการ</span></h4>
+              <ul>
+                <li>Fragrance development based on your brief and agreed creative direction.<span class="thai" lang="th">การพัฒนากลิ่นตามบรีฟและแนวทางที่ตกลงร่วมกัน</span></li>
+                <li>Up to two rounds of fragrance refinement.<span class="thai" lang="th">การปรับแต่งกลิ่นไม่เกิน 2 รอบ</span></li>
+                <li>Usage rights for the developed fragrance, subject to the terms specified in the quotation.<span class="thai" lang="th">สิทธิ์ในการใช้กลิ่นที่พัฒนาขึ้น ตามขอบเขตและเงื่อนไขที่ระบุในใบเสนอราคา</span></li>
+                <li>Fragrance samples are available at an additional cost.<span class="thai" lang="th">ตัวอย่างกลิ่นมีค่าใช้จ่ายเพิ่มเติม</span></li>
+              </ul>
+              <div class="note">
+                <h4 class="service-detail-title">Important Information<span class="thai" lang="th">ข้อมูลสำคัญก่อนเริ่มงาน</span></h4>
+                <p>The service fee does not include fragrance samples. Sample requirements and associated costs will be confirmed separately.<span class="thai" lang="th">ค่าบริการออกแบบกลิ่นไม่รวมค่าตัวอย่างกลิ่น โดยจะยืนยันรายละเอียดและค่าใช้จ่ายแยกต่างหาก</span></p>
+                <p>The full fragrance formula is not disclosed as part of the standard service. Usage rights and the permitted application of the developed fragrance will be specified in the quotation.<span class="thai" lang="th">บริการมาตรฐานไม่รวมการเปิดเผยสูตรกลิ่นเต็ม สิทธิ์ในการใช้กลิ่นและขอบเขตการนำไปใช้จะระบุไว้ในใบเสนอราคา</span></p>
+                <p>Project scope, deliverables, and any additional costs will be confirmed before work begins.<span class="thai" lang="th">ขอบเขตงาน รายละเอียดการส่งมอบ และค่าใช้จ่ายเพิ่มเติมจะได้รับการยืนยันก่อนเริ่มดำเนินงาน</span></p>
+              </div>
+            </details>
+            <a class="button language-toggle" href="mailto:zarch.pf@gmail.com?subject=Custom%20fragrance%20design%20inquiry" aria-label="Discuss Your Fragrance Project"><span class="button-label">Discuss Your Fragrance Project</span><span class="thai" lang="th" aria-hidden="true">พูดคุยเกี่ยวกับโปรเจกต์กลิ่นของคุณ</span></a>
           </article>
 
           <article class="service-card" id="concentrates">
             <p class="eyebrow">02 / Fragrance concentrates</p>
             <h3>Concentrates for product developers<span class="thai" lang="th">หัวน้ำหอมสำหรับผู้พัฒนาผลิตภัณฑ์</span></h3>
-            <p>For businesses developing their own fragranced products. Tell us the intended application and scent direction so you can request relevant product information and a quotation.<span class="thai" lang="th">สำหรับธุรกิจที่กำลังพัฒนาผลิตภัณฑ์ที่มีน้ำหอม แจ้งประเภทการใช้งานและทิศทางกลิ่น เพื่อสอบถามข้อมูลผลิตภัณฑ์และใบเสนอราคา</span></p>
-            <ul>
-              <li>Describe the product and how the fragrance will be used<span class="thai" lang="th">อธิบายผลิตภัณฑ์และลักษณะการใช้งานน้ำหอม</span></li>
-              <li>Share the scent profile or references you are exploring<span class="thai" lang="th">แจ้งแนวกลิ่นหรือตัวอย่างอ้างอิงที่สนใจ</span></li>
-              <li>Ask about product details, availability, and pricing<span class="thai" lang="th">สอบถามรายละเอียดสินค้า ความพร้อมจำหน่าย และราคา</span></li>
-            </ul>
+            <p>Fragrance concentrates for businesses developing their own fragranced products.<span class="thai" lang="th">หัวน้ำหอมสำหรับธุรกิจที่กำลังพัฒนาผลิตภัณฑ์ที่มีน้ำหอม</span></p>
             <p class="price">Quotation <small>on request / สอบถามราคา</small></p>
-            <p class="note">Inventory, specifications, minimum order quantities, pricing, and availability are confirmed on enquiry; no catalogue or stock list is published here.<span class="thai" lang="th">โปรดยืนยันสินค้าคงเหลือ รายละเอียดสินค้า จำนวนสั่งซื้อขั้นต่ำ ราคา และความพร้อมจำหน่ายเมื่อสอบถาม ขณะนี้ยังไม่มีแคตตาล็อกหรือรายการสินค้าเผยแพร่</span></p>
+            <details class="service-more">
+              <summary><span><span class="more">More</span><span class="less">Less</span></span><span class="thai" lang="th"><span class="more">เพิ่มเติม</span><span class="less">ย่อ</span></span></summary>
+              <p>Tell us the intended application and scent direction to request relevant product information and a quotation.<span class="thai" lang="th">แจ้งประเภทการใช้งานและทิศทางกลิ่น เพื่อสอบถามข้อมูลผลิตภัณฑ์และใบเสนอราคา</span></p>
+              <ul>
+                <li>Describe the product and how the fragrance will be used<span class="thai" lang="th">อธิบายผลิตภัณฑ์และลักษณะการใช้งานน้ำหอม</span></li>
+                <li>Share the scent profile or references you are exploring<span class="thai" lang="th">แจ้งแนวกลิ่นหรือตัวอย่างอ้างอิงที่สนใจ</span></li>
+                <li>Ask about product details, availability, and pricing<span class="thai" lang="th">สอบถามรายละเอียดสินค้า ความพร้อมจำหน่าย และราคา</span></li>
+              </ul>
+              <p class="note">Inventory, specifications, minimum order quantities, pricing, and availability are confirmed on enquiry; no catalogue or stock list is published here.<span class="thai" lang="th">โปรดยืนยันสินค้าคงเหลือ รายละเอียดสินค้า จำนวนสั่งซื้อขั้นต่ำ ราคา และความพร้อมจำหน่ายเมื่อสอบถาม ขณะนี้ยังไม่มีแคตตาล็อกหรือรายการสินค้าเผยแพร่</span></p>
+            </details>
             <a class="button secondary language-toggle" href="mailto:zarch.pf@gmail.com?subject=Fragrance%20concentrate%20inquiry" aria-label="Request product information"><span class="button-label">Request product information</span><span class="thai" lang="th" aria-hidden="true">ขอข้อมูลผลิตภัณฑ์</span></a>
           </article>
         </div>
@@ -265,7 +302,7 @@
         <div class="section-intro">
           <p class="eyebrow">A clear starting point</p>
           <h2>From brief to direction<span class="thai" lang="th">เริ่มจากบรีฟ สู่ทิศทางของกลิ่น</span></h2>
-          <p>Each project is discussed individually. The brief, development stages, samples, revisions, deliverables, and commercial terms should be agreed before work begins.<span class="thai" lang="th">หารือรายละเอียดแต่ละโปรเจกต์เป็นรายกรณี ควรตกลงบรีฟ ขั้นตอนการพัฒนา ตัวอย่าง การปรับแต่ง สิ่งที่จะส่งมอบ และเงื่อนไขทางการค้าก่อนเริ่มงาน</span></p>
+          <p>Each project starts with an agreed brief and quotation. The quotation confirms project scope, samples and their separate costs, permitted applications and usage rights, deliverables, and any additional agreed fees.<span class="thai" lang="th">แต่ละโปรเจกต์เริ่มจากบรีฟและใบเสนอราคาที่ตกลงร่วมกัน โดยใบเสนอราคาจะระบุขอบเขตงาน ตัวอย่างและค่าใช้จ่ายแยกต่างหาก ขอบเขตการใช้งานและสิทธิ์ในการใช้ รายละเอียดการส่งมอบ และค่าใช้จ่ายเพิ่มเติมที่ตกลงกัน</span></p>
         </div>
         <div class="steps">
           <article class="step">
@@ -276,12 +313,12 @@
           <article class="step">
             <span class="step-number">02</span>
             <h3>Discuss the scope</h3>
-            <p>Talk through the creative direction and request a quotation with the project details clarified.<span class="thai" lang="th">หารือทิศทางสร้างสรรค์และขอใบเสนอราคาพร้อมรายละเอียดโปรเจกต์</span></p>
+            <p>Agree the creative direction and quotation, including the project scope, sample costs, and usage rights.<span class="thai" lang="th">ตกลงทิศทางการสร้างสรรค์และใบเสนอราคา รวมถึงขอบเขตงาน ค่าตัวอย่าง และสิทธิ์ในการใช้</span></p>
           </article>
           <article class="step">
             <span class="step-number">03</span>
             <h3>Develop and evaluate</h3>
-            <p>Work through fragrance development and evaluation according to the scope agreed for your project.<span class="thai" lang="th">พัฒนาและประเมินกลิ่นตามขอบเขตที่ตกลงสำหรับโปรเจกต์ของคุณ</span></p>
+            <p>Develop and evaluate the fragrance based on your agreed brief, with up to two refinement rounds included.<span class="thai" lang="th">พัฒนาและประเมินกลิ่นตามบรีฟที่ตกลง โดยรวมการปรับแต่งไม่เกิน 2 รอบ</span></p>
           </article>
           <article class="step">
             <span class="step-number">04</span>
@@ -314,24 +351,16 @@
         <div class="section-intro">
           <p class="eyebrow">Before a project begins</p>
           <h2>Clear scope, agreed together<span class="thai" lang="th">ตกลงขอบเขตงานให้ชัดเจนก่อนเริ่มโปรเจกต์</span></h2>
-          <p>Only the design price of THB 3,000 per scent is currently stated. Other commercial and usage terms should be confirmed for each project rather than assumed.<span class="thai" lang="th">ขณะนี้มีการระบุเฉพาะค่าออกแบบ 3,000 บาทต่อกลิ่น เงื่อนไขทางการค้าและการใช้งานอื่นควรยืนยันเป็นรายโปรเจกต์</span></p>
+          <p>The quotation records the agreed scope and project-specific terms before work begins.<span class="thai" lang="th">ใบเสนอราคาจะระบุขอบเขตงานและเงื่อนไขเฉพาะของแต่ละโปรเจกต์ก่อนเริ่มงาน</span></p>
         </div>
         <div class="terms">
           <article class="term">
-            <h3>Design and development</h3>
-            <p>The current stated price is THB 3,000 per scent. Confirm whether it is fixed or a starting price, and define what the fee covers.<span class="thai" lang="th">ราคาที่ระบุในปัจจุบันคือ 3,000 บาทต่อกลิ่น โปรดยืนยันว่าเป็นราคาคงที่หรือราคาเริ่มต้น และครอบคลุมรายการใดบ้าง</span></p>
+            <h3>Project record</h3>
+            <p>The quotation records the project or fragrance reference, agreed brief, scope, included refinement rounds, and deliverables.<span class="thai" lang="th">ใบเสนอราคาจะระบุชื่อโปรเจกต์หรือรหัสกลิ่น บรีฟและขอบเขตงานที่ตกลง จำนวนรอบปรับแต่งที่รวมในบริการ และรายละเอียดการส่งมอบ</span></p>
           </article>
           <article class="term">
-            <h3>Samples and revisions</h3>
-            <p>Sample quantities, delivery, included refinement rounds, timing, and any extra charges are not specified; confirm them in the project quotation.<span class="thai" lang="th">ยังไม่ได้ระบุจำนวนตัวอย่าง การจัดส่ง จำนวนรอบปรับแต่ง ระยะเวลา และค่าใช้จ่ายเพิ่มเติม โปรดยืนยันในใบเสนอราคา</span></p>
-          </article>
-          <article class="term">
-            <h3>Formula and usage rights</h3>
-            <p>Formula disclosure, ownership, confidentiality, and usage rights are not stated here. Agree these terms before work begins.<span class="thai" lang="th">ยังไม่ได้ระบุการเปิดเผยสูตร กรรมสิทธิ์ การรักษาความลับ และสิทธิ์การใช้งาน โปรดตกลงเงื่อนไขเหล่านี้ก่อนเริ่มงาน</span></p>
-          </article>
-          <article class="term">
-            <h3>Production and additional costs</h3>
-            <p>Manufacturing, minimum order quantities, taxes, shipping, and other fees are not confirmed as standard services or terms. Request details for your project.<span class="thai" lang="th">ยังไม่มีการยืนยันบริการผลิต จำนวนสั่งซื้อขั้นต่ำ ภาษี ค่าจัดส่ง และค่าใช้จ่ายอื่นในฐานะบริการหรือเงื่อนไขมาตรฐาน โปรดสอบถามรายละเอียดสำหรับโปรเจกต์ของคุณ</span></p>
+            <h3>Commercial details</h3>
+            <p>Sample costs, permitted applications and usage rights, and any additional agreed fees are documented in the quotation. Payment terms and timing are agreed with the client.<span class="thai" lang="th">ใบเสนอราคาจะระบุค่าตัวอย่าง ขอบเขตผลิตภัณฑ์ที่อนุญาตให้ใช้ สิทธิ์ในการใช้ และค่าใช้จ่ายเพิ่มเติมที่ตกลงกัน ส่วนเงื่อนไขการชำระเงินและระยะเวลาจะตกลงกับลูกค้า</span></p>
           </article>
         </div>
       </div>
